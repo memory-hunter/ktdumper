@@ -30,6 +30,7 @@ from dump.pipl.pipl_probe_onenand import PiplProbeOnenand
 
 from dump.sh.sh_exploit import ShExploit
 from dump.fujitsu.fujitsu_java_dumper import FujitsuJavaDumper
+from dump.fujitsu.fujitsu_java_dumper_alternative import FujitsuJavaDumperAlternative
 
 from dump.sh.sh_srec_exploit_mlba_dumper_v2 import ShSrecExploitMlbaDumper_v2
 from dump.sh.sh_srec_exploit_memory_dumper_v2 import ShSrecExploitMemoryDumper_v2
@@ -1222,6 +1223,7 @@ DEVICES = [
     ################################################################################################
    
     Device("d800ids", 0x06d3, 0x2180, {"dump_java": FujitsuJavaDumper()}),
+    Device("d901is", 0x06d3, 0x20a0, {"dump_java_alt": FujitsuJavaDumperAlternative()}),
     Device("d902i", 0x06d3, 0x20b0, {"dump_java": FujitsuJavaDumper()}),
     Device("d902is", 0x06d3, 0x2120, {"dump_java": FujitsuJavaDumper()}),
     Device("d702i", 0x06d3, 0x2100, {"dump_java": FujitsuJavaDumper()}),
