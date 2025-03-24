@@ -1077,6 +1077,7 @@ DEVICES = [
     # FUJITSU
     ################################################################################################
 
+    Device("f901i", 0x04c5, 0x109d, {"dump_java_alt": FujitsuJavaDumperAlternative()}),
     Device("f902i", 0x04c5, 0x10ce, {"dump_java": FujitsuJavaDumper()}),
     Device("f902is", 0x04c5, 0x10db, {"dump_java": FujitsuJavaDumper()}),
     Device("f702id", 0x04c5, 0x10d9, {"dump_java": FujitsuJavaDumper()}),
